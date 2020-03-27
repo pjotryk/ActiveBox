@@ -1,0 +1,156 @@
+/*
+font-family: 'Raleway', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Cardo', serif;*/
+
+body {
+	margin: 0;
+	font-family: 'Raleway', sans-serif;
+	font-size: 14px;
+	color: #6c7279;
+	-webkit-font-smoothing: antialiased;
+}
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+}
+
+p {
+	margin: 0 0 10px 0;
+}
+
+/* Container */
+.container {
+	width: 100%;
+	max-width: 1170px;
+	margin: 0 auto;
+}
+
+
+/* Header */
+.header {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+}
+
+.header__inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 40px 0;
+	border-bottom: 1px solid #505269;
+}
+
+/* Nav */
+.nav {
+	font-size: 13px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.nav__link {
+	padding-left: 60px;
+	text-decoration: none;
+	color: #fff;
+	opacity: .70;
+	transition: opacity .2s linear;
+}
+
+.nav__link:first-child {
+	page-break-before: 0;
+}
+
+.nav__link:hover {
+	opacity: 1;
+}
+
+
+/* Intro */
+.intro {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 750px;
+	padding-top: 100px;
+	
+	background: #30344e url("../images/Header_bg.jpg") center no-repeat ;
+}
+
+.intro__inner {
+	width: 100%;
+	max-width: 970px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.intro__title {
+	margin: 0 0 30px 0;
+  font-size: 65px;
+	
+  font-family: 'Raleway', sans-serif;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.1;
+	
+}
+
+.intro__subtitle {
+  font-size: 22px;
+  color: #fff;
+  line-height: 1.5;
+  
+  font-weight: 400;
+}
+
+
+/* Button
+=============*/
+.btn {
+	padding: 20px 55px;
+	margin: 75px 0 0 0;
+	display: inline-block;
+	vertical-align: top;
+	
+	border-radius: 3px;
+	border: 0;
+	cursor: pointer;
+	
+	font-family: 'Raleway', sans-serif;
+	font-size: 13px;
+	font-weight: 600;
+	color: #fff;
+	text-transform: uppercase;
+	text-decoration: none;
+	transition: background .2s linear;
+}
+
+.btn--red {
+	background-color: #e84545;
+}
+
+
+.btn:hover {
+	background-color: #cb3030;	
+}
+
+
+
+
+
+
+
+
+
+
+
+

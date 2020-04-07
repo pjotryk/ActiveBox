@@ -107,6 +107,7 @@ p {
 }
 
 .intro__subtitle {
+	margin-bottom: 75px;
   font-size: 22px;
   color: #fff;
   line-height: 1.5;
@@ -119,7 +120,6 @@ p {
 =============*/
 .btn {
 	padding: 20px 55px;
-	margin: 75px 0 0 0;
 	display: inline-block;
 	vertical-align: top;
 	
@@ -143,6 +143,10 @@ p {
 
 .btn:hover {
 	background-color: #cb3030;	
+}
+
+.btn--long {
+	width: 280px;
 }
 
 /* Features
@@ -319,6 +323,7 @@ p {
 	transition: background .2s linear;
 }
 
+
 .social__item:hover {
 	background-color: #c6cacc;
 }
@@ -327,11 +332,36 @@ p {
 	fill: #000;
 }
 
+.social--footer {
+	justify-content: center;
+	
+}
+
 .social__icon {
 	height: 18px;
 	
 	transition: fill .2s linear;
 	fill: #c6cacc;
+}
+
+.social--footer .social__item {
+	background-color: transparent;
+	border: 2px solid #fff;
+	border-radius: 2px;
+}
+
+.social--footer .social__icon {
+	fill: #fff;
+}
+
+.social--footer .social__item:hover {
+	background-color: #fff;
+}
+
+.social--footer 
+.social__item:hover
+.social__icon {
+	fill: #3a3e64;
 }
 
 
@@ -394,12 +424,12 @@ p {
 ============*/
 .download {
 	margin: 100px 0;
+	
+	text-align: center;
 }
 
 .download__inner {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+
 }
 
 .download__title {
@@ -411,7 +441,7 @@ p {
 }
 
 .download__subtitle {
-	margin-bottom: -35px;
+	margin-bottom: 40px;
 	
 	font-size: 13px;
 	font-weight: 700;
@@ -419,22 +449,55 @@ p {
 	color: #2d3033;
 }
 
-.download__btn {
-	padding: 20px 80px;
-	border: 0;
-	
-	font-size: 13px;
-	font-weight: 500;
-	text-transform: uppercase;
-	color: #fff;
-	background-color: #e84545;
-	border-radius: 2px;
-	text-decoration: none;
+
+
+/* Footer
+==============*/
+.footer {	
+	background-color: #3a3e64;
 }
 
+.footer__inner {	
+	padding: 70px 0 100px;
+	
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
 
+.footer__item {
+	width: 33.3333%;
+	padding: 0 15px;
+	
+	color: #fff;
+	font-size: 14px;
+	text-align: center;
+}
 
+.footer__title {
+	margin-bottom: 15px;
+	
+	font-weight: 700;
+	text-transform: uppercase;
+}
 
+.footer__text {
+	
+	line-height: 1.6;
+}
+
+.footer--location {
+	opacity: .5;
+}
+
+.footer--about {
+	opacity: .5;
+}
+
+.footer__copyright {
+	background-color:  #313454;
+	padding: 20px 0;
+}
 
 
 

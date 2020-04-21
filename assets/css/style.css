@@ -44,11 +44,21 @@ p {
 	z-index: 1000;
 }
 
+.header.fixed .header__inner {
+  padding: 15px 0;
+  margin-bottom: 0;
+}
+
+.header.fixed {
+  position: fixed;
+  background: #30344e ;
+}
+
 .header__inner {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 40px 0;
+	padding: 30px 0;
 	border-bottom: 1px solid #505269;
 }
 
@@ -620,12 +630,15 @@ p {
   
   /* Reviews 
   ===============*/
+
+	
   .reviews__photo {
     width: 100%;
   }
   
   .reviews__content {
     width: 100%;
+		margin: 30px auto;
   }
   
   .reviews__img {
@@ -680,7 +693,64 @@ p {
   .team__item {
     width: 100%;
   }
+	
+	
+	/* Reviews
+	==============*/
+	.reviews__text {
+		font-size: 25px;
+	}
   
+  .reviews__img {
+	position: absolute;
+	top: 50%;
+	left: 35%;
+	z-index: 1;
+	transform: translate3d(-50%, -50%, 0);
+}
+  
+	/* Download
+	==============*/
+	.download {
+		margin: 50px 0;	
+	}
+	
+	.download__title {
+		font-size: 20px;
+	}
+	
+	.download__subtitle {
+		font-size: 10px;
+	}
+	
+	/*Footer
+	===========*/
+	.footer__inner { 
+		justify-content: center;
+		padding: 50px 0;
+	}
+	
+	.footer__item {
+		width: 100%;
+		margin-bottom: 30px;
+	}
+	
+	.footer__item:last-child {
+		margin-bottom: 0;	
+	}
+	
+	.footer__title {
+		margin-bottom: 0;
+	}
+	
 }
 
 
+@media (max-width: 500px) {
+/* Reviews
+	==============*/
+  
+  .reviews__img {
+	  left: 20%;
+  }
+}

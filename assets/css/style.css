@@ -381,6 +381,16 @@ p {
 	overflow: hidden;
 }
 
+.reviews__slider {
+  height: 500px;
+  overflow: hidden;
+}
+
+.reviews__slider.slick-initialized {
+  height: auto;
+  
+}
+
 .reviews__item {
 	display: flex;
 	flex-wrap: wrap;
@@ -427,6 +437,44 @@ p {
 	color: #fff;
 }
 
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0 0 10px;
+  list-style: none;
+  width: 50%;
+
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.slick-dots li {
+  margin: 0 5px;
+}
+
+.slick-dots button {
+  background-color: #fff;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 0;
+  font-size: 0;
+  color: transparent;
+  opacity: 0.5;
+  
+  cursor: pointer;
+}
+
+.slick-dots button:focus {
+  outline: 0;
+}
+
+.slick-dots .slick-active button {
+  opacity: 1;
+}
 
 /* Download
 ============*/
@@ -532,6 +580,10 @@ p {
   padding: 9px 2px;
   cursor: pointer; 
   background-color: transparent;
+}
+
+.burger:focus {
+  outline: 0;
 }
 
  .burger__item {

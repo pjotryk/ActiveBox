@@ -54,8 +54,17 @@ $(function () {
   });
   
   
-  /* Reviews Slider
+  /* Reviews Slider https://cdn.jsdelivr.net/npm/slick- carousel@1.8.1/slick/slick.css
   =====================*/
-    
+  let slider = $("#reviewsSlider");
+  
+  slider.slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    fade: true,
+    arrows: false,
+    dots: true
+});
 
 });
